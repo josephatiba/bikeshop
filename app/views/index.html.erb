@@ -1,0 +1,13 @@
+<h1>Dope Ass Bikes</h1>
+
+<% @bikes.each do |bike| %>
+
+		<ul>
+			<li>
+				<strong><%= bike.name %></strong> <%= bike.brand %> <%= bike.speed %>
+			</li>
+
+		</ul>
+
+
+<% end%>

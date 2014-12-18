@@ -1,0 +1,13 @@
+<%= form_for @bike do |b| %>
+	
+	Name: <%= b.text_field :name %>
+
+	Brand: <%= b.text_field :brand %>
+	
+	Speed: <%= b.text_field :speed %>
+
+	<%= b.submit "Add a bike!" %>
+
+<% end %>
+
+<%= link_to "Back to the list!", bikes_path %>

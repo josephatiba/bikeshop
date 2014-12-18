@@ -1,0 +1,8 @@
+<h1> <%= @bike.name %> </h1>
+
+<p> This bike is a <%= @bike.brand %> and its a <%= @bike.speed %> speed. </p> 
+
+<%= link_to "back to the list", bikes_path %>
+
+ <%= link_to "Edit #{@bike.name}'s Information", edit_bike_path(@bike) %>
+  <%= link_to "Delete #{@bike.name}", :bike, method: :delete, data: {confirm: "Are you sure you want to delete #{@bike.name}? #{@bike.name} is really nice."} %>

@@ -1,0 +1,19 @@
+<h1>Dope Ass Bikes</h1>
+
+<%= link_to "add a new bike", new_bike_path %>
+
+
+<% @bikes.each do |bike| %>
+
+		<ul>
+			<li>
+				<strong> <%= bike.name %> </strong> -- <%= bike.brand %> -- <%= bike.speed %> 
+				<%= link_to "more info", bike_path(bike) %>
+
+
+			</li>
+
+		</ul>
+
+
+<% end%>
